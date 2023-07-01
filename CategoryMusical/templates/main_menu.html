@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+    <div class="my_block1">
+        <h1>Музыкальная категория</h1>
+    </div>
+    <ul class="horizontal-menu">
+        <li>
+            <a href="{% url 'hiphop:hiphop_menu' %}">Хипхоп музыка</a>
+        </li>
+        <li>
+            <a href="{% url 'jaz:jaz_menu' %}">Джаз музыка</a>
+        </li>
+        <li>
+            <a href="{% url 'pop:pop_menu' %}">Поп музыка</a>
+        </li>
+    </ul>
+</body>
+
+{% endblock content %}
